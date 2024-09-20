@@ -1,1 +1,110 @@
-.sidebar{border-right:1px solid #0c0a0a;padding-right:15px}.content{padding-left:15px}.author-urls{margin-top:20px}.author__urls li{list-style:none;margin-bottom:10px}.author__urls a{display:flex;align-items:left;color:#333;text-decoration:none}.author__urls i{font-size:24px;margin-right:10px}.author__urls a:hover{color:#007bff}.condensed-table td,.condensed-table tr{margin:0;padding:0}body{font-family:'Palatino Linotype',serif;}
+body {
+    font-family: 'Palatino Linotype', serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.sidebar {
+    border-right: 1px solid #e0e0e0;
+    padding-right: 30px;
+}
+
+.content {
+    padding-left: 30px;
+}
+
+.author-avatar img {
+    max-width: 200px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.author-bio {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.author-urls {
+    margin-top: 20px;
+}
+
+.author-urls li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.author-urls a {
+    display: flex;
+    align-items: center;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.author-urls a:hover {
+    color: #007bff;
+}
+
+.author-urls i {
+    font-size: 20px;
+    margin-right: 10px;
+    width: 25px;
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.table {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.table thead {
+    background-color: #f0f0f0;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+    color: #777;
+}
+
+@media (max-width: 991px) {
+    .sidebar, .content {
+        padding: 0 15px;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+}
