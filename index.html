@@ -1,114 +1,765 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Balagopal Unnikrishnan - Personal Website</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Balagopal Unnikrishnan</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="btn btn-outline-primary mr-2" href="files/CV-Balagopal.pdf" download target="_blank">Download CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-primary" href="files/Resume-Balagopal.pdf" download target="_blank">Download Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+</button> -->
     <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-3 sidebar">
-                <div class="author-avatar">
-                    <img src="profile2.jpg" alt="Balagopal Unnikrishnan" class="rounded-circle img-fluid">
-                </div>
-                <hr>
-                <div class="author-bio">
-                    <h4>Balagopal Unnikrishnan</h4>
-                    <p>PhD Researcher at Vector Institute / UofT & Ex AI Engineer with A*STAR, Singapore</p>
-                </div>
-                <hr>
-                <div class="mb-3">
-                    <a href="files/CV-Balagopal.pdf" class="btn btn-outline-primary btn-block mb-2" download target="_blank">Download CV</a>
-                    <!-- <a href="files/Resume-Balagopal.pdf" class="btn btn-outline-primary btn-block" download target="_blank">Download Resume</a> -->
-                  </div>
-                <hr>
-                <ul class="author-urls">
-                    <li><a href="https://github.com/theidentity"><i class="fab fa-github"></i> GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/balagopalu/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=GpXYUt8AAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
-                    <li><a href="mailto:balu@cs.toronto.edu"><i class="fas fa-envelope"></i> Email</a></li>
-                    <li><a href="tel:+14379911394"><i class="fas fa-phone"></i> Phone</a></li>
-                </ul>
-                <hr>
-                <div class="author-location">
-                    <p>I'm open for collaborations. You'll find me at the Vector Institute situated in the <a href="https://maps.app.goo.gl/TLPMBLjuZxefiznv9">U of T: Schwartz Reisman Innovation Campus</a>.</p>
-                </div>
-
-            </div>
-            <div class="col-lg-9 content">
-                <section class="mb-5">
-                    <h2>About me</h2>
-                    <p>I'm an AI researcher focused on building algorithms and tools aiming to advance healthcare through technology. I'm currently a PhD student at the University of Toronto, advised by <a href="https://mcintoshml.github.io/index.html">Dr. Chris McIntosh</a> and <a href="https://brudno.uhndata.io/">Dr. Michael Brudno</a> where my research revolves around developing algorithms that address biases in AI models applied to medical data.</p>
-                    <p>A special shoutout to the <a href="https://srinstitute.utoronto.ca/">Schwartz Reisman Institute</a>, <a href="https://vectorinstitute.ai/about/">Vector Institute</a>, <a href="https://www.uhn.ca/Research/pages/default.aspx">University Health Network (UHN)</a> and <a href="https://www.sickkids.ca/en/about/about-sickkids/">SickKids Hospital</a> for generously supporting my work and placing me in an environment of world-class researchers and clinicians.</p>
-                    <p>I completed my Masters from the National University of Singapore (NUS), specializing in Computational Intelligence. Before joining the PhD program, I worked as an AI Engineer developing IP and building tools for AI augmented healthcare applications.</p>
-                    <p>I love the sea, and I'm a certified scuba diver. P.S: If you ever need company to dive, drop me a message. Thanks to long layovers and commutes, I've been managing to read a bit. Here's <a href="https://www.goodreads.com/review/list/56683183-balagopal-unnikrishnan?shelf=read&view=covers">my reading list</a> if you are thinking "hmm, what should I read next?"</p>
-                </section>
-
-                <section class="mb-5">
-                    <h2>Research Interests</h2>
-                    <p>My primary research focus is on identifying and combating data biases and the phenomenon of shortcut learning in AI/healthcare models. I build algorithms for reducing the reliance of bias and spurious confounders and shortcuts of AI models for healthcare tasks. I'm interested in putting together new healthcare datasets (especially from developing nations) and building systems that improve healthcare pipelines and enable a more equitable utilization of AI tools.</p>
-                    <p>I'm also interested in putting my engineering and research skills to use. If you have tasks which have a large amount of unlabelled data, please reach out. I have some experience with semi-supervised algorithms and building human in loop AI augment annotation pipelines.</p>
-                    <p>On the other end of the spectrum, if you have very little data, I'm interested in utilizing generative models for data augmentation and generation.</p>
-                </section>
-
-                <section class="mb-5">
-                    <h2>PhD Updates</h2>
-                    <ul>
-                        <li>Successfully achieved PhD candidacy. My thesis will be centered around addressing shortcut learning & biases for AI in healthcare.</li>
-                        <li>Excited to announce that I've been awarded the prestigious <a href="https://srinstitute.utoronto.ca/news/sri-announces-2024-fellowship-recipients">2024 Schwartz Reisman Institute Graduate Fellowship</a>. The fellowship supports my work on debiasing AI models in healthcare.</li>
-                        <li>Our paper "<a href="https://www.nature.com/articles/s41746-024-01118-4">Shortcut Learning in Medical AI Hinders Generalization</a>" has been accepted at Nature Digital Medicine. We have also publicly released <a href="https://github.com/mcintoshML/Data-Bias-Analysis">our code</a> which allows researchers to estimate the generalization of their AI models without external data.</li>
-                        <li>I'm appearing as a guest on the <a href="https://open.spotify.com/show/00nG9M1lGQaw6yIE5dYEg6">ATGO-AI Podcast (Accountability, Trust, Governance, and Oversight of Artificial Intelligence)</a> talking about my research and recent publication on data biases in healthcare data. The podcast is available on Spotify and Apple Podcasts: <a href="https://open.spotify.com/episode/2df4GXk0YdbZBCFmNCz50H/">Episode 1</a> and <a href="https://open.spotify.com/episode/6ma9sR6egdx6zj6yhv6QoI/">Episode 2</a>.</li>
-                    </ul>
-                </section>
-
-                <section class="mb-5">
-                    <h2>Volunteer Positions & Leadership</h2>
-                    <ul>
-                        <li>Executive Council Member: Computer Science Graduate Students' Benevolent Society (CSGSBS)</li>
-                        <li>Distinguished Reviewer: IEEE Transactions in Medical Imaging (TMI)</li>
-                        <li>Reviewer: Nature Scientific Reports</li>
-                        <li>Mentor: Graduate Application Assistance Program (GAAP) [2022 - 2024]</li>
-                        <li>Chairperson: Singapore Computer Society (SCS) Chapter - NUS ISS</li>
-                        <li>Richard E Merwin Scholar - IEEE Computer Society</li>
-                        <li>Youth Excellence Award for Most Promising Engineer - Kerala</li>
-                        <li>Section Student Representative - IEEE Kerala Section</li>
-                        <li>Chairperson: IEEE Computer Society CET Chapter</li>
-                        <li>Co-Organizer: NASA Space Apps Challenge</li>
-                    </ul>
-                </section>
-            </div>
+      <div class="row">
+        <div class="col-lg-3 sidebar">
+          <div class="author-avatar">
+            <img
+              src="profile2.jpg"
+              alt="Balagopal Unnikrishnan"
+              class="rounded-circle img-fluid"
+            />
+          </div>
+          <hr />
+          <div class="author-bio">
+            <h4>Balagopal Unnikrishnan</h4>
+            <p>
+              PhD Researcher at Vector Institute / UofT & Ex AI Engineer with
+              A*STAR, Singapore
+            </p>
+          </div>
+          <hr />
+          <div class="mb-3">
+            <a
+              href="files/CV-Balagopal.pdf"
+              class="btn btn-outline-primary btn-block mb-2"
+              download
+              target="_blank"
+              >Download CV</a
+            >
+            <!-- <a href="files/Resume-Balagopal.pdf" class="btn btn-outline-primary btn-block" download target="_blank">Download Resume</a> -->
+          </div>
+          <hr />
+          <ul class="author-urls">
+            <li>
+              <a href="https://github.com/theidentity"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/balagopalu/"
+                ><i class="fab fa-linkedin"></i> LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://scholar.google.com/citations?user=GpXYUt8AAAAJ&hl=en"
+                ><i class="fas fa-graduation-cap"></i> Google Scholar</a
+              >
+            </li>
+            <li>
+              <a href="mailto:balu@cs.toronto.edu"
+                ><i class="fas fa-envelope"></i> Email</a
+              >
+            </li>
+            <li>
+              <a href="tel:+14379911394"><i class="fas fa-phone"></i> Phone</a>
+            </li>
+          </ul>
+          <hr />
+          <div class="author-location">
+            <p>
+              I'm open for collaborations. You'll find me at the Vector
+              Institute situated in the
+              <a href="https://maps.app.goo.gl/TLPMBLjuZxefiznv9"
+                >U of T: Schwartz Reisman Innovation Campus</a
+              >.
+            </p>
+          </div>
+          <hr />
+          <div class="conference-attendance mb-3">
+            <h5>Find me at:</h5>
+            <ul>
+              <li><strong>NeurIPS 2025</strong><br />San Diego, Dec 1-7</li>
+              <li><strong>WACV 2026</strong><br />Tucson, March 6-10</li>
+            </ul>
+          </div>
+          <hr />
+          <div class="theme-toggle-sidebar mb-3">
+            <button class="btn btn-outline-primary btn-block" id="themeToggle">
+              <i class="fas fa-moon"></i> Toggle Dark Mode
+            </button>
+          </div>
+          <hr />
         </div>
+        <div class="col-lg-9 content">
+          <section class="mb-5">
+            <h2>About me</h2>
+            <p>
+              I'm a PhD candidate at the University of Toronto, advised by
+              <a href="https://mcintoshml.github.io/index.html"
+                >Dr. Chris McIntosh</a
+              >
+              and
+              <a href="https://brudno.uhndata.io/">Dr. Michael Brudno</a> where
+              my research revolves around developing algorithms that mitigate
+              shortcut learning and spurious correlations in AI models applied
+              to medical data.
+            </p>
+            <p>
+              A special shoutout to the
+              <a href="https://srinstitute.utoronto.ca/"
+                >Schwartz Reisman Institute</a
+              >,
+              <a href="https://vectorinstitute.ai/about/">Vector Institute</a>,
+              <a href="https://www.uhn.ca/Research/pages/default.aspx"
+                >University Health Network (UHN)</a
+              >
+              and
+              <a href="https://www.sickkids.ca/en/about/about-sickkids/"
+                >SickKids Hospital</a
+              >
+              for generously supporting my work and enabling interdisciplinary
+              collaboration between research and clinical practice.
+            </p>
+            <p>
+              I completed my Masters from the National University of Singapore
+              (NUS), specializing in Computational Intelligence. Before joining
+              the PhD program, I worked as an AI Research Engineer developing
+              algorithms and clinical tools for AI-augmented healthcare
+              applications.
+            </p>
+          </section>
+
+          <section class="mb-5">
+            <h2>PhD Updates</h2>
+            <ul>
+              <li>
+                Our paper "SilverLining: Data-First Mitigation of Spatial and
+                Spectral Shortcuts Without Introducing New Confounders" has been
+                accepted at WACV 2026. This work presents a novel approach to
+                addressing shortcut learning in AI models through data-centric
+                methods rather than architectural changes or loss functions.
+              </li>
+
+              <li>
+                I'll be presenting our work "When AI Democratizes Exploitation:
+                LLM-Assisted Strategic Manipulation of Fair Division Algorithms"
+                at the ACA Workshop, NeurIPS 2025.
+              </li>
+              <li>
+                Excited to share that my research has crossed 550 citations on
+                Google Scholar. Thank you to the research community for engaging
+                with and building upon our work.
+              </li>
+              <li>
+                Successfully achieved PhD candidacy. My thesis will be centered
+                around addressing shortcut learning & improving model robustness
+                for AI in healthcare.
+              </li>
+              <li>
+                Excited to announce that I've been awarded the prestigious
+                <a
+                  href="https://srinstitute.utoronto.ca/news/sri-announces-2024-fellowship-recipients"
+                  >2024 Schwartz Reisman Institute Graduate Fellowship</a
+                >. The fellowship supports my work on improving robustness and
+                addressing shortcut learning in healthcare AI models.
+              </li>
+              <li>
+                Our paper "<a
+                  href="https://www.nature.com/articles/s41746-024-01118-4"
+                  >Shortcut Learning in Medical AI Hinders Generalization</a
+                >" has been accepted at Nature Digital Medicine. We have also
+                publicly released
+                <a href="https://github.com/mcintoshML/Data-Bias-Analysis"
+                  >our code</a
+                >
+                which allows researchers to estimate the generalization of their
+                AI models without external data.
+              </li>
+              <li>
+                I'm appearing as a guest on the
+                <a href="https://open.spotify.com/show/00nG9M1lGQaw6yIE5dYEg6"
+                  >ATGO-AI Podcast (Accountability, Trust, Governance, and
+                  Oversight of Artificial Intelligence)</a
+                >
+                talking about my research and recent publication on shortcut
+                learning and spurious correlations in healthcare data. The
+                podcast is available on Spotify and Apple Podcasts:
+                <a
+                  href="https://open.spotify.com/episode/2df4GXk0YdbZBCFmNCz50H/"
+                  >Episode 1</a
+                >
+                and
+                <a
+                  href="https://open.spotify.com/episode/6ma9sR6egdx6zj6yhv6QoI/"
+                  >Episode 2</a
+                >.
+              </li>
+            </ul>
+          </section>
+
+          <section class="mb-5">
+            <h2>Publications</h2>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  SilverLining: Data-First Mitigation of Spatial and Spectral
+                  Shortcuts Without Introducing New Confounders
+                </div>
+                <div class="publication-authors">
+                  <strong>Balagopal Unnikrishnan</strong>, Michael Brudno, Chris
+                  McIntosh
+                </div>
+                <div class="publication-venue">
+                  The IEEE/CVF Winter Conference on Applications of Computer
+                  Vision (WACV) 2026
+                </div>
+                <div class="publication-links">
+                  <a href="#" target="_blank" class="publication-link">
+                    <i class="fas fa-file-pdf"></i>Coming Soon
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Shortcut Learning in Medical AI Hinders Generalization: Method
+                  for Estimating AI Model Generalization Without External Data
+                </div>
+                <div class="publication-authors">
+                  Cathy Ong Ly*, <strong>Balagopal Unnikrishnan*</strong>, Tony
+                  Tadic, Tirth Patel, Joe Duhamel, Sonja Kandel, Yasbanoo
+                  Moayedi, Michael Brudno, Andrew Hope, Heather Ross, Chris
+                  McIntosh (*co-first authors)
+                </div>
+                <div class="publication-venue">Nature Digital Medicine 2024</div>
+                <div class="publication-links">
+                  <a
+                    href="https://www.nature.com/articles/s41746-024-01118-4"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                  <span class="link-separator">|</span>
+                  <a
+                    href="https://github.com/mcintoshML/Data-Bias-Analysis"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fab fa-github"></i>Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-balance-scale"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  When AI Democratizes Exploitation: LLM-Assisted Strategic
+                  Manipulation of Fair Division Algorithms
+                </div>
+                <div class="publication-authors">
+                  Priyanka Verma*,
+                  <strong>Balagopal Unnikrishnan*</strong> (*co-first authors)
+                </div>
+                <div class="publication-venue">ACA Workshop, NeurIPS 2025</div>
+                <div class="publication-links">
+                  <a href="#" target="_blank" class="publication-link">
+                    <i class="fas fa-file-pdf"></i>Coming Soon
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Beyond Ethics: How Inclusive Innovation Drives Economic
+                  Returns in Medical AI
+                </div>
+                <div class="publication-authors">
+                  <strong>Balagopal Unnikrishnan</strong>, Ariel Guerra Adames,
+                  Amin Adibi, Sameer Peesapati, Rafal Kocielnik, Shira Fischer,
+                  Hillary Clinton Kasimbazi, Rodrigo Gameiro, Alina Peluso,
+                  Chrystinne Oliveira Fernandes, et al.
+                </div>
+                <div class="publication-venue">Under Review: Nature Digital Medicine</div>
+                <div class="publication-links">
+                  <a
+                    href="https://arxiv.org/abs/2510.10338"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-user-shield"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Red Teaming Large Language Models for Healthcare
+                </div>
+                <div class="publication-authors">
+                  Vahid Balazadeh, Michael Cooper, David Pellow, Atousa Assadi,
+                  Jennifer Bell, Mark Coatsworth, Kaivalya Deshpande, Jim
+                  Fackler, Gabriel Funingana, Spencer Gable-Cook, et al.
+                  (including <strong>Balagopal Unnikrishnan</strong>)
+                </div>
+                <div class="publication-venue">Findings from Machine Learning for Healthcare Conference Workshop 2024</div>
+                <div class="publication-links">
+                  <a
+                    href="https://arxiv.org/abs/2505.00467"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Diverse and Consistent Multi-view Networks for Semi-supervised
+                  Regression
+                </div>
+                <div class="publication-authors">
+                  Cuong Nguyen, Arun Raja, Le Zhang, Xun Xu,
+                  <strong>Balagopal Unnikrishnan</strong>, Mohamed Ragab,
+                  Kangkang Lu, Chuan-Sheng Foo
+                </div>
+                <div class="publication-venue">
+                  Machine Learning, 2023
+                </div>
+                <div class="publication-links">
+                  <a
+                    href="https://link.springer.com/article/10.1007/s10994-023-06305-0"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i> Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Semi-supervised Classification of Radiology Images with
+                  NoTeacher: A Teacher that is Not Mean
+                </div>
+                <div class="publication-authors">
+                  <strong>Balagopal Unnikrishnan</strong>, Cuong Nguyen, Shafa
+                  Balaram, Chao Li, Chuan Sheng Foo, Pavitra Krishnaswamy
+                </div>
+                <div class="publication-venue">
+                  Medical Image Analysis, 2021
+                </div>
+                <div class="publication-links">
+                  <a
+                    href="https://doi.org/10.1016/j.media.2021.102148"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Self-Path: Self-Supervision for Classification of Pathology
+                  Images with Limited Annotations
+                </div>
+                <div class="publication-authors">
+                  Navid Alemi Koohbanani,
+                  <strong>Balagopal Unnikrishnan</strong>, Syed Ali Khurram,
+                  Pavitra Krishnaswamy, Nasir Rajpoot
+                </div>
+                <div class="publication-venue">
+                  IEEE Transactions on Medical Imaging, 2021
+                </div>
+                <div class="publication-links">
+                  <a
+                    href="https://doi.org/10.1109/TMI.2021.3056023"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-x-ray"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Semi-supervised Classification of Diagnostic Radiographs with
+                  NoTeacher: A Teacher that is Not Mean
+                </div>
+                <div class="publication-authors">
+                  <strong>Balagopal Unnikrishnan</strong>, Cuong Manh Nguyen,
+                  Shafa Balaram, Chuan Sheng Foo, Pavitra Krishnaswamy
+                </div>
+                <div class="publication-venue">
+                  International Conference on Medical Image Computing and
+                  Computer-Assisted Intervention (MICCAI) 2021 | Runner Up - Best
+                  Paper Award
+                </div>
+                <div class="publication-links">
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-030-59710-8_61"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Semi-supervised and Unsupervised Methods for Heart Sounds
+                  Classification in Restricted Data Environments
+                </div>
+                <div class="publication-authors">
+                  <strong>Balagopal Unnikrishnan</strong>, Pranshu Ranjan Singh,
+                  Xulei Yang, Matthew Chin Heng Chua
+                </div>
+                <div class="publication-venue">arXiv:2006.02610</div>
+                <div class="publication-links">
+                  <a
+                    href="https://arxiv.org/abs/2006.02610"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  CaRENets: Compact and Resource-Efficient CNN for Homomorphic
+                  Inference on Encrypted Medical Images
+                </div>
+                <div class="publication-authors">
+                  Jin Chao, Ahmad Al Badawi,
+                  <strong>Balagopal Unnikrishnan</strong>, Jie Lin, Chan Fook
+                  Mun, James M Brown, J Peter Campbell, Michael Chiang,
+                  Jayashree Kalpathy-Cramer, Vijay Ramaseshan Chandrasekhar, et
+                  al.
+                </div>
+                <div class="publication-venue">
+                  Privacy in Machine Learning Workshop, NeurIPS 2019 
+                </div>
+                <div class="publication-links">
+                  <a
+                    href="https://arxiv.org/abs/1901.10074"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Towards Practical Unsupervised Anomaly Detection on Retinal
+                  Images
+                </div>
+                <div class="publication-authors">
+                  Khalil Ouardini, Huijuan Yang,
+                  <strong>Balagopal Unnikrishnan</strong>, Manon Romain, Camille
+                  Garcin, Houssam Zenati, J Peter Campbell, Michael F Chiang,
+                  Jayashree Kalpathy-Cramer, Vijay Chandrasekhar, Pavitra
+                  Krishnaswamy, Chuan-Sheng Foo
+                </div>
+                <div class="publication-venue">
+                  Domain Adaptation and Representation
+                  Transfer Workshop, MICCAI 2019
+                </div>
+                <div class="publication-links">
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-030-33391-1_26"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-lungs"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Deep Learning Models for Tuberculosis Detection from Chest
+                  X-ray Images
+                </div>
+                <div class="publication-authors">
+                  Quang H Nguyen, Binh P Nguyen, Son D Dao,
+                  <strong>Balagopal Unnikrishnan</strong>, Rajan Dhingra,
+                  Savitha Rani Ravichandran, Sravani Satpathy, Palaparthi Nirmal
+                  Raja, Matthew CH Chua
+                </div>
+                <div class="publication-venue">
+                  26th International Conference on Telecommunications, ICT 2019
+                </div>
+                <div class="publication-links">
+                  <a
+                    href="https://doi.org/10.1109/ICT.2019.8798798"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Learning of Multi-Dimensional Analog Circuits Through
+                  Generative Adversarial Network (GAN)
+                </div>
+                <div class="publication-authors">
+                  Rahul Dutta, Salahuddin Raju, Ashish James, Chemmanda John
+                  Leo, Yong-Joon Jeon, <strong>Balagopal Unnikrishnan</strong>,
+                  Chuan Sheng Foo, Zeng Zeng, Kevin Tshun Chuan Chai, Vijay R
+                  Chandrasekhar
+                </div>
+                <div class="publication-venue">
+                  IEEE International System-on-Chip Conference, SOCC 2019
+                </div>
+                <div class="publication-links">
+                  <a
+                    href="https://doi.org/10.1109/SOCC46988.2019.1570548547"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-eye-dropper"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Semi-supervised Deep Learning for Abnormality Classification
+                  in Retinal Images
+                </div>
+                <div class="publication-authors">
+                  Bruno Lecouat, Ken Chang, Chuan-Sheng Foo,
+                  <strong>Balagopal Unnikrishnan</strong>, James M Brown,
+                  Houssam Zenati, Andrew Beers, Vijay Chandrasekhar, Jayashree
+                  Kalpathy-Cramer, Pavitra Krishnaswamy
+                </div>
+                <div class="publication-venue">
+                  Machine Learning for Health (ML4H) Workshop, NeurIPS 2018
+                </div>
+                <div class="publication-links">
+                  <a
+                    href="https://arxiv.org/abs/1812.07832"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="publication-item">
+              <div class="publication-image">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">
+                  Integrated Platform for Resource-efficient Medical Image
+                  Annotation
+                </div>
+                <div class="publication-authors">
+                  Yang Yu, Ashish Jith Sreejith Kumar, Feri Guretno, Shafa
+                  Balaram, <strong>Balagopal Unnikrishnan</strong>, Pavitra
+                  Krishnaswamy, Ivan Ho Mien
+                </div>
+                <div class="publication-links">
+                  <a
+                    href="https://oar.a-star.edu.sg/storage/p/prq2k6n236/abstract-submission-for-iaim-23.pdf"
+                    target="_blank"
+                    class="publication-link"
+                  >
+                    <i class="fas fa-file-pdf"></i>Paper
+                  </a>
+                </div>
+              </div>
+            </div> -->
+          </section>
+
+          <section class="mb-5">
+            <h2>Volunteer Positions & Leadership</h2>
+            <ul>
+              <li>
+                Distinguished Reviewer: IEEE Transactions in Medical Imaging
+                (TMI)
+              </li>
+              <li>Reviewer: Nature Digital Medicine</li>
+              <li>Reviewer: Nature Scientific Reports</li>
+              <li>Mentor: Graduate Application Assistance Program (GAAP)</li>
+              <li>
+                Chairperson: Singapore Computer Society (SCS) Chapter - NUS ISS
+              </li>
+              <li>Richard E Merwin Scholar - IEEE Computer Society</li>
+              <li>
+                Youth Excellence Award for Most Promising Engineer - Kerala
+              </li>
+              <li>Section Student Representative - IEEE Kerala Section</li>
+              <li>Chairperson: IEEE Computer Society CET Chapter</li>
+              <li>Co-Organizer: NASA Space Apps Challenge</li>
+            </ul>
+          </section>
+
+          <section class="mb-5">
+            <h2>Beyond Research</h2>
+            <p>
+              I love the sea, and I'm a certified scuba diver. P.S: If you ever
+              need company to dive, drop me a message. Thanks to long layovers
+              and commutes, I've been managing to read a bit. Here's
+              <a
+                href="https://www.goodreads.com/review/list/56683183-balagopal-unnikrishnan?shelf=read&view=covers"
+                >my reading list</a
+              >
+              if you are thinking "hmm, what should I read next?"
+            </p>
+          </section>
+        </div>
+      </div>
     </div>
 
     <footer class="text-center mt-5">
-        <p>This website was made possible by the (very strong) CS grad lounge coffee, <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://fontawesome.com/">Font-Awesome</a></p>
+      <p>
+        This website was made possible by the (very strong) CS grad lounge
+        coffee, <a href="https://getbootstrap.com/">Bootstrap</a> and
+        <a href="https://fontawesome.com/">Font-Awesome</a>
+      </p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+
+    <script>
+      // Dark mode toggle functionality
+      const themeToggle = document.getElementById("themeToggle");
+      const html = document.documentElement;
+      const icon = themeToggle.querySelector("i");
+
+      // Check for saved theme preference or default to light
+      const currentTheme = localStorage.getItem("theme") || "light";
+      html.setAttribute("data-theme", currentTheme);
+      updateIcon(currentTheme);
+
+      // Toggle theme on button click
+      themeToggle.addEventListener("click", () => {
+        const theme = html.getAttribute("data-theme");
+        const newTheme = theme === "light" ? "dark" : "light";
+
+        html.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        updateIcon(newTheme);
+      });
+
+      // Update icon based on theme
+      function updateIcon(theme) {
+        if (theme === "dark") {
+          icon.classList.remove("fa-moon");
+          icon.classList.add("fa-sun");
+        } else {
+          icon.classList.remove("fa-sun");
+          icon.classList.add("fa-moon");
+        }
+      }
+    </script>
+  </body>
 </html>
