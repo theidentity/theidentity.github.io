@@ -367,3 +367,8 @@ footer {
 .theme-toggle i {
   font-size: 1.2rem;
 }
+
+.highlight1 {
+  font-weight: bold;
+  /* font-style: italic; */
+}
